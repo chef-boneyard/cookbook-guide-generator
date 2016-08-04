@@ -1,0 +1,16 @@
+language: ruby
+
+install:
+  - curl -L https://chef.io/chef/install.sh | sudo bash -s -- -P chefdk
+  - chef exec bundle install --without=development integration
+
+before_script:
+
+script:
+  - chef exec rake
+
+after_script:
+
+env:
+  global:
+    # - KITCHEN_LOCAL_YAML=.kitchen.travis.yml
