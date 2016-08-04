@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.1.1](https://github.com/chef-partners/cookbook-guide-generator/tree/1.1.0) (2016-08-04)
+[Full Changelog](https://github.com/chef-partners/cookbook-guide-generator/compare/1.1.0...1.1.1)
+
+- Added some notes and licenses.
+
 ## [1.1.0](https://github.com/chef-partners/cookbook-guide-generator/tree/1.1.0) (2016-08-04)
 [Full Changelog](https://github.com/chef-partners/cookbook-guide-generator/compare/1.0.0...1.1.0)
 
