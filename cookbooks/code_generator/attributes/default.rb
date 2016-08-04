@@ -24,4 +24,4 @@ default['code_generator']['username'] = 'authors'
 default['code_generator']['email'] = 'the_authors@company.com'
 default['code_generator']['license'] = 'apachev2'
 default['code_generator']['issues'] = 'https://github.com/company/cookbook/issues'
-default['code_generator']['source'] = 'https://github.com/company/cookbook
+default['code_generator']['source'] = 'https://github.com/company/cookbook'
