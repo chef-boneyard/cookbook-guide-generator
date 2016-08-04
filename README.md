@@ -1,4 +1,4 @@
-Chef Partner Cookbook Guide Code Generator
+Chef Partner Cookbook-guide Generator
 ===================
 [![Build Status](http://img.shields.io/travis/chef-partners/cookbook-guide-generator.svg)][travis]
 [![Code Climate](http://img.shields.io/codeclimate/github/chef-partners/cookbook-guide-generator.svg)][codeclimate]
