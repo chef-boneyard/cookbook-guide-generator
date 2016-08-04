@@ -28,10 +28,8 @@ directory cookbook_dir
 template "#{cookbook_dir}/metadata.rb" do
   helpers(ChefDK::Generator::TemplateHelper)
   action :create_if_missing
-  variables({
-              :issues => node['code_generator']['issues'],
-              :source => node['code_generator']['source']
-            })
+  variables(issues: node['code_generator']['issues'],
+            source: node['code_generator']['source'])
 end
 
 # README
