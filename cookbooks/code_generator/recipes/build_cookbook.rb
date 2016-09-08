@@ -48,7 +48,7 @@ end
 
 # LICENSE
 template "#{build_cookbook_dir}/LICENSE" do
-  source "LICENSE.#{context.license}.erb"
+  source "LICENSE.erb"
   helpers(ChefDK::Generator::TemplateHelper)
   action :create_if_missing
 end
