@@ -48,7 +48,7 @@ end
 
 # LICENSE
 template "#{build_cookbook_dir}/LICENSE" do
-  source "LICENSE.erb"
+  source 'LICENSE.erb'
   helpers(ChefDK::Generator::TemplateHelper)
   action :create_if_missing
 end
@@ -102,7 +102,7 @@ version '0.1.0')
 end
 
 cookbook_file "#{build_cookbook_dir}/test/fixtures/cookbooks/test/recipes/default.rb" do
-  source 'build-cookbook/test-fixture-recipe.rb'
+  source 'build-cookbook/test_fixture_recipe.rb'
 end
 
 # Construct git history as if we did all the work in a feature branch which we
