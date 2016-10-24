@@ -20,15 +20,13 @@ services: docker
 
 env:
   matrix:
-  - INSTANCE=smoke-centos-6
-  - INSTANCE=smoke-centos-7
-  - INSTANCE=smoke-fedora-latest
-  - INSTANCE=smoke-debian-8
-  - INSTANCE=smoke-ubuntu-1204
-  - INSTANCE=smoke-ubuntu-1404
-  - INSTANCE=smoke-ubuntu-1604
-  - INSTANCE=smoke-opensuse-132
-  - INSTANCE=smoke-opensuse-421
+  - INSTANCE=default-centos-6
+  - INSTANCE=default-centos-7
+  - INSTANCE=default-fedora-latest
+  - INSTANCE=default-debian-8
+  - INSTANCE=default-ubuntu-1204
+  - INSTANCE=default-ubuntu-1404
+  - INSTANCE=default-ubuntu-1604
 
 # Ensure we make ChefDK's Ruby the default
 before_script:
