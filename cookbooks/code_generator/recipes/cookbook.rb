@@ -77,6 +77,12 @@ end
 # chefignore
 cookbook_file "#{cookbook_dir}/chefignore"
 
+# Gemfile
+cookbook_file "#{cookbook_dir}/Gemfile"
+
+# Guardfile
+cookbook_file "#{cookbook_dir}/Guardfile"
+
 if context.use_berkshelf
 
   # Berks

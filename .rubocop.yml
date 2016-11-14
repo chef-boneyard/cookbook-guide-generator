@@ -64,7 +64,7 @@ Style/ConstantName:
   Enabled: true
 Style/DefWithParentheses:
   Enabled: true
-Style/DeprecatedHashMethods:
+Style/PreferredHashMethods:
   Enabled: true
 Style/Documentation:
   Enabled: true
