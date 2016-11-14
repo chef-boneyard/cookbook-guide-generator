@@ -7,9 +7,10 @@
 require 'spec_helper'
 
 describe '<%= cookbook_name %>::default' do
-  context 'When all attributes are default, on an unspecified platform' do
+  describe 'ubuntu' do
+    let(:runner) { ChefSpec::ServerRunner.new(UBUNTU_OPTS) }
+    let(:node) { runner.node }
     let(:chef_run) do
-      runner = ChefSpec::ServerRunner.new
       runner.converge(described_recipe)
     end
 
@@ -18,8 +19,8 @@ describe '<%= cookbook_name %>::default' do
     end
   end
 
-  describe 'ubuntu' do
-    let(:runner) { ChefSpec::ServerRunner.new(UBUNTU_OPTS) }
+  describe 'windows' do
+    let(:runner) { ChefSpec::ServerRunner.new(WINDOWS_OPTS) }
     let(:node) { runner.node }
     let(:chef_run) do
       runner.converge(described_recipe)

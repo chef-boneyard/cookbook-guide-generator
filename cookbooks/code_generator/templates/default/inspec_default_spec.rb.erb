@@ -13,7 +13,7 @@ end
 
 describe port(443) do
   it { should be_listening }
-  its('protocols') {should include 'tcp'}
+  its('protocols') { should include 'tcp' }
 end
 
 describe sshd_config do
