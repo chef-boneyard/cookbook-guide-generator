@@ -1,6 +1,5 @@
-# encoding: utf-8
 # frozen_string_literal: true
-#
+
 # Cookbook Name:: cookbook-guide-generator
 # Recipe:: build_cookbook.rb
 #
@@ -66,7 +65,7 @@ end
 # Recipes
 directory "#{build_cookbook_dir}/recipes"
 
-%w(default deploy functional lint provision publish quality security smoke syntax unit).each do |phase|
+%w[default deploy functional lint provision publish quality security smoke syntax unit].each do |phase|
   template "#{build_cookbook_dir}/recipes/#{phase}.rb" do
     source 'build-cookbook/recipe.rb.erb'
     helpers(ChefDK::Generator::TemplateHelper)

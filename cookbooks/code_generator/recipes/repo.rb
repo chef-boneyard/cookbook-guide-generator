@@ -1,6 +1,5 @@
-# encoding: utf-8
 # frozen_string_literal: true
-#
+
 # Cookbook Name:: cookbook-guide-generator
 # Recipe:: repo.rb
 #
@@ -46,12 +45,12 @@ cookbook_file "#{repo_dir}/chefignore" do
   action :create_if_missing
 end
 
-directories_to_create = %w(cookbooks data_bags)
+directories_to_create = %w[cookbooks data_bags]
 
 directories_to_create += if context.use_roles
-                           %w(roles environments)
+                           %w[roles environments]
                          else
-                           %w(policies)
+                           %w[policies]
                          end
 
 directories_to_create.each do |tlo|

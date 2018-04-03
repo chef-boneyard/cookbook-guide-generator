@@ -150,7 +150,7 @@ Style/LeadingCommentSpace:
   Enabled: true
 Style/LineEndConcatenation:
   Enabled: true
-Style/MethodCallParentheses:
+Style/MethodCallWithoutArgsParentheses:
   Enabled: true
 Style/MethodDefParentheses:
   Enabled: true
@@ -194,7 +194,7 @@ Style/NumericLiterals:
   Enabled: true
 Style/OneLineConditional:
   Enabled: true
-Style/OpMethod:
+Naming/BinaryOperatorParameterName:
   Enabled: true
 Style/OptionalArguments:
   Enabled: true
@@ -272,8 +272,6 @@ Style/SpaceAroundKeyword:
   Enabled: true
 Style/SpaceAroundOperators:
   Enabled: true
-Style/SpaceInsideBrackets:
-  Enabled: true
 Style/SpaceInsideHashLiteralBraces:
   Enabled: true
 Style/SpaceInsideParens:
@@ -302,7 +300,9 @@ Style/TrailingBlankLines:
   Enabled: true
 Style/TrailingCommaInArguments:
   Enabled: true
-Style/TrailingCommaInLiteral:
+Style/TrailingCommaInArrayLiteral:
+  Enabled: true
+Style/TrailingCommaInHashLiteral:
   Enabled: true
 Style/TrailingWhitespace:
   Enabled: true
@@ -398,10 +398,6 @@ Lint/ImplicitStringConcatenation:
   Enabled: true
 Lint/IneffectiveAccessModifier:
   Enabled: true
-Lint/InvalidCharacterLiteral:
-  Enabled: true
-Lint/LiteralInCondition:
-  Enabled: true
 Lint/LiteralInInterpolation:
   Enabled: true
 Lint/Loop:
@@ -425,8 +421,6 @@ Lint/ShadowingOuterLocalVariable:
 Lint/StringConversionInInterpolation:
   Enabled: true
 Lint/UnderscorePrefixedVariableName:
-  Enabled: true
-Lint/UnneededDisable:
   Enabled: true
 Lint/UnusedBlockArgument:
   Enabled: true
@@ -463,8 +457,6 @@ Performance/FixedSize:
 Performance/FlatMap:
   Enabled: true
   EnabledForFlattenWithoutParams: false
-Performance/HashEachMethods:
-  Enabled: true
 Performance/LstripRstrip:
   Enabled: true
 Performance/RangeInclude:
