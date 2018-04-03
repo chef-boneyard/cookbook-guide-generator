@@ -150,7 +150,7 @@ Style/LeadingCommentSpace:
   Enabled: true
 Style/LineEndConcatenation:
   Enabled: true
-Style/MethodCallParentheses:
+Style/MethodCallWithoutArgsParentheses:
   Enabled: true
 Style/MethodDefParentheses:
   Enabled: true
