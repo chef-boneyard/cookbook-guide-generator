@@ -401,8 +401,6 @@ Lint/ImplicitStringConcatenation:
   Enabled: true
 Lint/IneffectiveAccessModifier:
   Enabled: true
-Lint/InvalidCharacterLiteral:
-  Enabled: true
 Lint/LiteralInCondition:
   Enabled: true
 Lint/LiteralInInterpolation:
