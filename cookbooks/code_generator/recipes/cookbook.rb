@@ -28,7 +28,11 @@ template "#{cookbook_dir}/metadata.rb" do
   helpers(ChefDK::Generator::TemplateHelper)
   action :create_if_missing
   variables(issues: node['code_generator']['issues'],
-            source: node['code_generator']['source'])
+            source: node['code_generator']['source'],
+            copyright_holder: node['code_generator']['copyright_holder'],
+            email: node['code_generator']['email'],
+            username: node['code_generator']['username'],
+            license: node['code_generator']['license'])
 end
 
 # README
