@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Cookbook Name:: cookbook-guide-generator
 # Recipe:: lwrp.rb
 #
