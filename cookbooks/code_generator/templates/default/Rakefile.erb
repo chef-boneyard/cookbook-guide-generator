@@ -16,16 +16,13 @@ namespace :style do
   FoodCritic::Rake::LintTask.new(:chef) do |t|
     t.options = {
       fail_tags: ['any'],
-      tags:[
-        '~FC005',
-        '~FC023'
-      ]
+      tags: %w(~FC005 ~FC023),
     }
   end
 end
 
 desc 'Run all style checks'
-task style: ['style:chef', 'style:ruby']
+task style: %w(style:chef style:ruby)
 
 # Rspec and ChefSpec
 desc 'Run ChefSpec examples'
@@ -50,7 +47,9 @@ namespace :integration do
 
     if run_kitchen
       Kitchen.logger = Kitchen.default_file_logger
-      @loader = Kitchen::Loader::YAML.new(project_config: './.kitchen.cloud.yml')
+      @loader = Kitchen::Loader::YAML.new(
+        project_config: './.kitchen.cloud.yml'
+      )
       config = Kitchen::Config.new(loader: @loader)
       config.instances.each do |instance|
         instance.test(:always)
